@@ -364,6 +364,7 @@ span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background: none;
     padding: 2rem 9%;
     
 
@@ -686,4 +687,176 @@ width: 100%;
 .button-container {
   display: flex;
   justify-content: flex-end;
+}
+
+/* Add your reference page specific styles here */
+
+.reference {
+    padding: 10rem 9% 2rem;
+}
+
+.reference .main-text h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.reference .main-text p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.reference-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reference-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.reference-content p {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.reference-content ol {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--secondary-bg-color);
+    z-index: 100;
+}
+
+.footer .footer-text {
+    font-size: 1.6rem;
+}
+
+.footer .footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    margin-left: .5rem;
+}
+
+.footer .footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+    transition: .5s;
+}
+
+.footer .footer-iconTop a:hover i {
+    color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+    .reference .main-text h1 {
+        font-size: 4rem;
+    }
+
+    .reference-content {
+        padding: 0 2rem;
+    }
+
+    .reference-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .reference-content p,
+    .reference-content ol {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .reference .main-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .reference-content h2 {
+        font-size: 2rem;
+    }
+
+    .reference-content p,
+    .reference-content ol {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 371px) {
+    .reference .main-text h1 {
+        font-size: 3rem;
+    }
+}
+.dark-pattern-analyzer {
+    background-color: var(--secondary-bg-color);
+    border-radius: .6rem;
+    padding: 4rem 8rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-pattern-analyzer h2 {
+    color: var(--main-color);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.dark-pattern-analyzer h3 {
+    color: var(--main-color);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.dark-pattern-analyzer p {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.dark-pattern-analyzer ul {
+    margin-bottom: 2rem;
+}
+
+.dark-pattern-analyzer ul li {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.dark-pattern-analyzer code {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    padding: .5rem;
+    border-radius: .3rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 3rem;
+}
+
+.dark-pattern-analyzer code::before,
+.dark-pattern-analyzer code::after {
+    content: '\00a0';
+}
+
+.dark-pattern-analyzer strong {
+    color: var(--main-color);
+    font-weight: 600;
 }
